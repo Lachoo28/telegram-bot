@@ -6,7 +6,7 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-  bot.reply_to(message, "Welcome to YouTube Downloader Bot!")
+  bot.reply_to(message, "Welcome to YouTube Downloader Bot! put your youtube link")
 
 @bot.message_handler(func=lambda message: True)
 def download_video(message):
